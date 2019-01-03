@@ -14,7 +14,8 @@
 		42657D5921D8222800A26F20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42657D5821D8222800A26F20 /* Assets.xcassets */; };
 		42657D5C21D8222800A26F20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42657D5A21D8222800A26F20 /* LaunchScreen.storyboard */; };
 		4275432D21DC1E5F0020E369 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4275432C21DC1E5F0020E369 /* CategoryTableViewController.swift */; };
-		42E5089F21D971C400173ADB /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42E5089D21D971C400173ADB /* DataModel.xcdatamodeld */; };
+		42FA363921DD84E700CBB3B4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FA363821DD84E700CBB3B4 /* Item.swift */; };
+		42FA363B21DD84F000CBB3B4 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FA363A21DD84F000CBB3B4 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		42657D5B21D8222800A26F20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42657D5D21D8222800A26F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4275432C21DC1E5F0020E369 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
-		42E5089E21D971C400173ADB /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		42FA363821DD84E700CBB3B4 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		42FA363A21DD84F000CBB3B4 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		8F185CDAD09D9F086C37538B /* Pods_Todoey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Todoey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA0891B2AE693C0EEC42949 /* Pods-Todoey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoey.release.xcconfig"; path = "Pods/Target Support Files/Pods-Todoey/Pods-Todoey.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,7 +80,8 @@
 		42E5089921D9319700173ADB /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				42E5089D21D971C400173ADB /* DataModel.xcdatamodeld */,
+				42FA363A21DD84F000CBB3B4 /* Category.swift */,
+				42FA363821DD84E700CBB3B4 /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -248,10 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42FA363921DD84E700CBB3B4 /* Item.swift in Sources */,
 				42657D5421D8222700A26F20 /* TodoListViewController.swift in Sources */,
-				42E5089F21D971C400173ADB /* DataModel.xcdatamodeld in Sources */,
 				42657D5221D8222700A26F20 /* AppDelegate.swift in Sources */,
 				4275432D21DC1E5F0020E369 /* CategoryTableViewController.swift in Sources */,
+				42FA363B21DD84F000CBB3B4 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,19 +455,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		42E5089D21D971C400173ADB /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				42E5089E21D971C400173ADB /* DataModel.xcdatamodel */,
-			);
-			currentVersion = 42E5089E21D971C400173ADB /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 42657D4621D8222700A26F20 /* Project object */;
 }
